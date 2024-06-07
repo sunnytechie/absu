@@ -439,7 +439,7 @@
                                         <div class="form-group">
                                             <!-- Label -->
                                             <label class="pb-1">
-                                                Previous Exam No.
+                                                O'level Exam No.
                                             </label>
                                             <!-- Input group -->
                                             <div class="input-group input-group-merge">
@@ -456,7 +456,7 @@
                                         <div class="form-group">
                                             <!-- Label -->
                                             <label class="pb-1">
-                                                Previous Exam Type
+                                                O'level Exam Type
                                             </label>
                                             <!-- Input group -->
                                             <div class="input-group input-group-merge">
@@ -472,7 +472,7 @@
                                         <div class="form-group">
                                             <!-- Label -->
                                             <label class="pb-1">
-                                                Previous Exam Year
+                                                O'level Exam Year
                                             </label>
                                             <!-- Input group -->
                                             <div class="input-group input-group-merge">

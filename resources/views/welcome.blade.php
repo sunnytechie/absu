@@ -182,7 +182,7 @@
                                                 <div class="input-icon">
                                                     <span class="ti-user color-primary"></span>
                                                 </div>
-                                                <input type="text" name="fullname" required class="form-control" placeholder="Enter your fullname">
+                                                <input type="text" name="fullname" required class="form-control" placeholder="Surname, Last Name">
                                             </div>
                                         </div>
                                     </div>
@@ -541,10 +541,10 @@
                                                         <span class="ti-list color-primary"></span>
                                                     </div>
                                                     <select name="center" required class="form-control">
-                                                        <option>Enugu Degree</option>
-                                                        <option>Awgu Degree</option>
-                                                        <option>Nkanu Degree</option>
-                                                        <option>Nsukka Degree</option>
+                                                        <option>Enugu Center</option>
+                                                        <option>Awgu Center</option>
+                                                        <option>Nkanu Center</option>
+                                                        <option>Nsukka Center</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -730,7 +730,7 @@
                                 {{-- previous and submit --}}
                                 <div class="btn-group">
                                     <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="previousSection('section4', 'section3')">Previous</button>
-                                    <button type="submit" class="btn sign-btn border-radius mt-4 mb-3">Submit</button>
+                                    <button type="submit" class="btn sign-btn border-radius mt-4 mb-3">Pay Now</button>
                                 </div>
 
                             </div>

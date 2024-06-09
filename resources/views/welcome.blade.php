@@ -275,14 +275,14 @@
                                         <div class="form-group">
                                             <!-- Label -->
                                             <label class="pb-1">
-                                                DOB
+                                                Date of Birth
                                             </label>
                                             <!-- Input group -->
                                             <div class="input-group input-group-merge">
                                                 <div class="input-icon">
                                                     <span class="ti-calendar color-primary"></span>
                                                 </div>
-                                                <input type="date" name="dob" required class="form-control">
+                                                <input type="date" name="dob" placeholder="DOB" required class="form-control">
                                             </div>
                                         </div>
                                     </div>
@@ -395,14 +395,14 @@
 
 
                                 <div class="form-row">
-                                    <div class="col-md-12 mb-3" style="font-weight: 600">NOK(Next of Kin) & Prev. Exam</div>
+                                    <div class="col-md-12 mb-3" style="font-weight: 600">Next of Kin (NOK)</div>
 
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <!-- Label -->
                                             <label class="pb-1">
-                                                Next of Kin
+                                                NOK Fullname
                                             </label>
                                             <!-- Input group -->
                                             <div class="input-group input-group-merge">

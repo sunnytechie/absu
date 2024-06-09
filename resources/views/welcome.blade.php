@@ -395,7 +395,7 @@
 
 
                                 <div class="form-row">
-                                    <div class="col-md-12 mb-3" style="font-weight: 600">Next of Kin (NOK)</div>
+                                    <div class="col-md-12" style="font-weight: 600">Next of Kin (NOK)</div>
 
 
                                     <div class="col-md-6">

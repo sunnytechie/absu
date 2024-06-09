@@ -175,19 +175,49 @@
                                         <div class="form-group">
                                             <!-- Label -->
                                             <label class="pb-1">
-                                                Fullname
+                                                Surname
                                             </label>
                                             <!-- Input group -->
                                             <div class="input-group input-group-merge">
                                                 <div class="input-icon">
                                                     <span class="ti-user color-primary"></span>
                                                 </div>
-                                                <input type="text" name="fullname" required class="form-control" placeholder="Surname, Last Name">
+                                                <input type="text" name="surname" required class="form-control" placeholder="Surname">
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="pb-1">
+                                                First Name
+                                            </label>
+                                            <!-- Input group -->
+                                            <div class="input-group input-group-merge">
+                                                <div class="input-icon">
+                                                    <span class="ti-user color-primary"></span>
+                                                </div>
+                                                <input type="text" name="first_name" required class="form-control" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="pb-1">
+                                                Other Names
+                                            </label>
+                                            <!-- Input group -->
+                                            <div class="input-group input-group-merge">
+                                                <div class="input-icon">
+                                                    <span class="ti-user color-primary"></span>
+                                                </div>
+                                                <input type="text" name="other_name" class="form-control" placeholder="Other names">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <!-- Label -->
                                             <label for="phone" class="pb-1">
@@ -203,7 +233,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <!-- Label -->
                                             <label class="pb-1">
@@ -314,6 +344,18 @@
                                     </div>
                                 </div>
 
+
+
+                                <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="nextSection('section1', 'section2')">Continue</button>
+                            </div>
+
+
+
+
+
+
+                            {{-- Section 2 --}}
+                            <div id="section2" class="section" style="display: none;">
                                 <!-- LGA -->
                                 <div class="form-row">
                                     <div class="col-md-6">
@@ -351,16 +393,7 @@
                                     </div>
                                 </div>
 
-                                <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="nextSection('section1', 'section2')">Continue</button>
-                            </div>
 
-
-
-
-
-
-                            {{-- Section 2 --}}
-                            <div id="section2" class="section" style="display: none;">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3" style="font-weight: 600">NOK(Next of Kin) & Prev. Exam</div>
 
@@ -434,6 +467,16 @@
 
                                 </div>
 
+
+                                {{-- btn continue and previous --}}
+                                <div class="btn-group">
+                                        <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="previousSection('section2', 'section1')">Previous</button>
+                                        <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="nextSection('section2', 'section3')">Continue</button>
+                                </div>
+                            </div>
+
+
+                            <div id="section3" class="section" style="display: none;">
                                 <div class="form-row">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -446,7 +489,7 @@
                                                 <div class="input-icon">
                                                     <span class="ti-pencil color-primary"></span>
                                                 </div>
-                                                <input type="number" class="form-control" name="prev_exam_no" placeholder="Optional">
+                                                <input type="number" class="form-control" name="prev_exam_no" required placeholder="Number">
                                             </div>
                                         </div>
                                     </div>
@@ -463,7 +506,7 @@
                                                 <div class="input-icon">
                                                     <span class="ti-info color-primary"></span>
                                                 </div>
-                                                <input type="text" name="prev_type_exam" class="form-control" placeholder="Optional">
+                                                <input type="text" name="prev_type_exam" class="form-control" required placeholder="Exam type">
                                             </div>
                                         </div>
                                     </div>
@@ -479,7 +522,62 @@
                                                 <div class="input-icon">
                                                     <span class="ti-calendar color-primary"></span>
                                                 </div>
-                                                <input type="text" class="form-control" name="prev_exam_year" placeholder="Optional">
+                                                <input type="text" class="form-control" name="prev_exam_year" required placeholder="Year">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                <div class="col-md-12 mb-3" style="font-weight: 600">If you have two O'level results</div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <!-- Label -->
+                                            <label class="pb-1">
+                                                O'level Exam No.
+                                            </label>
+                                            <!-- Input group -->
+                                            <div class="input-group input-group-merge">
+                                                <div class="input-icon">
+                                                    <span class="ti-pencil color-primary"></span>
+                                                </div>
+                                                <input type="number" class="form-control" name="o_level_2_exam_no" placeholder="Optional">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <!-- Label -->
+                                            <label class="pb-1">
+                                                O'level Exam Type
+                                            </label>
+                                            <!-- Input group -->
+                                            <div class="input-group input-group-merge">
+                                                <div class="input-icon">
+                                                    <span class="ti-info color-primary"></span>
+                                                </div>
+                                                <input type="text" name="o_level_2_exam_type" class="form-control" placeholder="Optional">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <!-- Label -->
+                                            <label class="pb-1">
+                                                O'level Exam Year
+                                            </label>
+                                            <!-- Input group -->
+                                            <div class="input-group input-group-merge">
+                                                <div class="input-icon">
+                                                    <span class="ti-calendar color-primary"></span>
+                                                </div>
+                                                <input type="text" class="form-control" name="o_level_2_exam_year" placeholder="Optional">
                                             </div>
                                         </div>
                                     </div>
@@ -488,9 +586,10 @@
 
                                 {{-- btn continue and previous --}}
                                 <div class="btn-group">
-                                        <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="previousSection('section2', 'section1')">Previous</button>
-                                        <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="nextSection('section2', 'section3')">Continue</button>
+                                        <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="previousSection('section3', 'section2')">Previous</button>
+                                        <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="nextSection('section3', 'section4')">Continue</button>
                                 </div>
+
                             </div>
 
 
@@ -501,7 +600,7 @@
 
 
                             {{-- Section 3 --}}
-                            <div id="section3" class="section" style="display: none;">
+                            <div id="section4" class="section" style="display: none;">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3" style="font-weight: 600">Programs</div>
 
@@ -598,8 +697,8 @@
 
 
                                 <div class="btn-group">
-                                    <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="previousSection('section3', 'section2')">Previous</button>
-                                        <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="nextSection('section3', 'section4')">Continue</button>
+                                    <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="previousSection('section4', 'section3')">Previous</button>
+                                        <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="nextSection('section4', 'section5')">Continue</button>
                                 </div>
 
                             </div>
@@ -610,7 +709,7 @@
 
 
                             {{-- Section 4 --}}
-                            <div id="section4" class="section" style="display: none;">
+                            <div id="section5" class="section" style="display: none;">
                                 <div class="form-row">
                                     <div class="col-md-12 mb-3" style="font-weight: 600">Attatchments</div>
 
@@ -729,7 +828,7 @@
 
                                 {{-- previous and submit --}}
                                 <div class="btn-group">
-                                    <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="previousSection('section4', 'section3')">Previous</button>
+                                    <button type="button" class="btn sign-btn border-radius mt-4 mb-3" onclick="previousSection('section5', 'section4')">Previous</button>
                                     <button type="submit" class="btn sign-btn border-radius mt-4 mb-3">Pay Now</button>
                                 </div>
 

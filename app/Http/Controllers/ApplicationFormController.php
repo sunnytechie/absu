@@ -27,7 +27,9 @@ class ApplicationFormController extends Controller
         ];
         $tr_ref = Paystack::genTranxRef();
         $form = new ApplicationForm();
-        $form->fullname = $request->fullname;
+        $form->surname = $request->surname;
+        $form->first_name = $request->first_name;
+        $form->other_name = $request->other_name;
         $form->phone = $request->phone;
         $form->email = $request->email;
         $form->gender = $request->gender;
@@ -47,6 +49,9 @@ class ApplicationFormController extends Controller
         $form->course = $request->course;
         $form->center = $request->center;
         $form->tr_ref = $tr_ref;
+        $form->o_level_2_exam_no = $request->o_level_2_exam_no;
+        $form->o_level_2_exam_type = $request->o_level_2_exam_type;
+        $form->o_level_2_exam_year = $request->o_level_2_exam_year;
         foreach ($fileFields as $fileField) {
             if ($request->hasFile($fileField)) {
                 $file = $request->file($fileField);

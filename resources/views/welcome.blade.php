@@ -529,7 +529,7 @@
                                 </div>
 
                                 <div class="form-row">
-                                <div class="col-md-12 mb-3" style="font-weight: 600">If you have two O'level results</div>
+                                <div class="col-md-12" style="font-weight: 600">If you have two O'level results</div>
                                 </div>
 
                                 <div class="form-row">
